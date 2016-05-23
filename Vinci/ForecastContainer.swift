@@ -12,6 +12,21 @@ import ReactiveCocoa
 class ForecastContainer: BaseViewController {
     
     private var _swipeVC: ForecastSwipeController!
+    private var _service: ForecastServiceProtocol!
+
+    // --------------------
+    // MARK: Initialisation
+    // --------------------
+    ////////////////////////////////////////////////////////////////////////////////
+    init(service: ForecastServiceProtocol) {
+        self._service = service
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // --------------------
     // MARK: View Management
@@ -20,8 +35,7 @@ class ForecastContainer: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let service = ForecastService(url: kOWMBaseUrl)
-        service.forecastProducer()
+        self._service.forecastProducer()
             .flatMap(.Concat, transform: self.viewControllersProducer)
             .startWithNext { viewControllers in
                 self._swipeVC = ForecastSwipeController(

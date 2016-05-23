@@ -37,7 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     ////////////////////////////////////////////////////////////////////////////////
     private func rootViewController() -> UIViewController {
-        return ForecastContainer()
+        let service = ForecastService(url: kOWMBaseUrl)
+        return ForecastContainer(service: service)
     }
     
     ////////////////////////////////////////////////////////////////////////////////
