@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB1B2F5E1CF37B0A004FC8B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2F5D1CF37B0A004FC8B6 /* AppDelegate.swift */; };
+		DB1B2F651CF37B0A004FC8B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1B2F641CF37B0A004FC8B6 /* Assets.xcassets */; };
+		DB1B2F681CF37B0A004FC8B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1B2F661CF37B0A004FC8B6 /* LaunchScreen.storyboard */; };
+		DB1B2F731CF37B0A004FC8B6 /* VinciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2F721CF37B0A004FC8B6 /* VinciTests.swift */; };
+		DB1B2F7E1CF37B0A004FC8B6 /* VinciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2F7D1CF37B0A004FC8B6 /* VinciUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB1B2F6F1CF37B0A004FC8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB1B2F521CF37B0A004FC8B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB1B2F591CF37B0A004FC8B6;
+			remoteInfo = Vinci;
+		};
+		DB1B2F7A1CF37B0A004FC8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB1B2F521CF37B0A004FC8B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB1B2F591CF37B0A004FC8B6;
+			remoteInfo = Vinci;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB1B2F5A1CF37B0A004FC8B6 /* Vinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1B2F5D1CF37B0A004FC8B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB1B2F641CF37B0A004FC8B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB1B2F671CF37B0A004FC8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB1B2F691CF37B0A004FC8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1B2F6E1CF37B0A004FC8B6 /* VinciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1B2F721CF37B0A004FC8B6 /* VinciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinciTests.swift; sourceTree = "<group>"; };
+		DB1B2F741CF37B0A004FC8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1B2F791CF37B0A004FC8B6 /* VinciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinciUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1B2F7D1CF37B0A004FC8B6 /* VinciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinciUITests.swift; sourceTree = "<group>"; };
+		DB1B2F7F1CF37B0A004FC8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB1B2F571CF37B0A004FC8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B2F6B1CF37B0A004FC8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B2F761CF37B0A004FC8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB1B2F511CF37B0A004FC8B6 = {
+			isa = PBXGroup;
+			children = (
+				DB1B2F5C1CF37B0A004FC8B6 /* Vinci */,
+				DB1B2F711CF37B0A004FC8B6 /* VinciTests */,
+				DB1B2F7C1CF37B0A004FC8B6 /* VinciUITests */,
+				DB1B2F5B1CF37B0A004FC8B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB1B2F5B1CF37B0A004FC8B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B2F5A1CF37B0A004FC8B6 /* Vinci.app */,
+				DB1B2F6E1CF37B0A004FC8B6 /* VinciTests.xctest */,
+				DB1B2F791CF37B0A004FC8B6 /* VinciUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB1B2F5C1CF37B0A004FC8B6 /* Vinci */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B2F5D1CF37B0A004FC8B6 /* AppDelegate.swift */,
+				DB1B2F641CF37B0A004FC8B6 /* Assets.xcassets */,
+				DB1B2F661CF37B0A004FC8B6 /* LaunchScreen.storyboard */,
+				DB1B2F691CF37B0A004FC8B6 /* Info.plist */,
+			);
+			path = Vinci;
+			sourceTree = "<group>";
+		};
+		DB1B2F711CF37B0A004FC8B6 /* VinciTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B2F721CF37B0A004FC8B6 /* VinciTests.swift */,
+				DB1B2F741CF37B0A004FC8B6 /* Info.plist */,
+			);
+			path = VinciTests;
+			sourceTree = "<group>";
+		};
+		DB1B2F7C1CF37B0A004FC8B6 /* VinciUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B2F7D1CF37B0A004FC8B6 /* VinciUITests.swift */,
+				DB1B2F7F1CF37B0A004FC8B6 /* Info.plist */,
+			);
+			path = VinciUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB1B2F591CF37B0A004FC8B6 /* Vinci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1B2F821CF37B0A004FC8B6 /* Build configuration list for PBXNativeTarget "Vinci" */;
+			buildPhases = (
+				DB1B2F561CF37B0A004FC8B6 /* Sources */,
+				DB1B2F571CF37B0A004FC8B6 /* Frameworks */,
+				DB1B2F581CF37B0A004FC8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vinci;
+			productName = Vinci;
+			productReference = DB1B2F5A1CF37B0A004FC8B6 /* Vinci.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB1B2F6D1CF37B0A004FC8B6 /* VinciTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1B2F851CF37B0A004FC8B6 /* Build configuration list for PBXNativeTarget "VinciTests" */;
+			buildPhases = (
+				DB1B2F6A1CF37B0A004FC8B6 /* Sources */,
+				DB1B2F6B1CF37B0A004FC8B6 /* Frameworks */,
+				DB1B2F6C1CF37B0A004FC8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB1B2F701CF37B0A004FC8B6 /* PBXTargetDependency */,
+			);
+			name = VinciTests;
+			productName = VinciTests;
+			productReference = DB1B2F6E1CF37B0A004FC8B6 /* VinciTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB1B2F781CF37B0A004FC8B6 /* VinciUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1B2F881CF37B0A004FC8B6 /* Build configuration list for PBXNativeTarget "VinciUITests" */;
+			buildPhases = (
+				DB1B2F751CF37B0A004FC8B6 /* Sources */,
+				DB1B2F761CF37B0A004FC8B6 /* Frameworks */,
+				DB1B2F771CF37B0A004FC8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB1B2F7B1CF37B0A004FC8B6 /* PBXTargetDependency */,
+			);
+			name = VinciUITests;
+			productName = VinciUITests;
+			productReference = DB1B2F791CF37B0A004FC8B6 /* VinciUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB1B2F521CF37B0A004FC8B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kam Popat";
+				TargetAttributes = {
+					DB1B2F591CF37B0A004FC8B6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DB1B2F6D1CF37B0A004FC8B6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DB1B2F591CF37B0A004FC8B6;
+					};
+					DB1B2F781CF37B0A004FC8B6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DB1B2F591CF37B0A004FC8B6;
+					};
+				};
+			};
+			buildConfigurationList = DB1B2F551CF37B0A004FC8B6 /* Build configuration list for PBXProject "Vinci" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB1B2F511CF37B0A004FC8B6;
+			productRefGroup = DB1B2F5B1CF37B0A004FC8B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB1B2F591CF37B0A004FC8B6 /* Vinci */,
+				DB1B2F6D1CF37B0A004FC8B6 /* VinciTests */,
+				DB1B2F781CF37B0A004FC8B6 /* VinciUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB1B2F581CF37B0A004FC8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1B2F681CF37B0A004FC8B6 /* LaunchScreen.storyboard in Resources */,
+				DB1B2F651CF37B0A004FC8B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B2F6C1CF37B0A004FC8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B2F771CF37B0A004FC8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB1B2F561CF37B0A004FC8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1B2F5E1CF37B0A004FC8B6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B2F6A1CF37B0A004FC8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1B2F731CF37B0A004FC8B6 /* VinciTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B2F751CF37B0A004FC8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1B2F7E1CF37B0A004FC8B6 /* VinciUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB1B2F701CF37B0A004FC8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB1B2F591CF37B0A004FC8B6 /* Vinci */;
+			targetProxy = DB1B2F6F1CF37B0A004FC8B6 /* PBXContainerItemProxy */;
+		};
+		DB1B2F7B1CF37B0A004FC8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB1B2F591CF37B0A004FC8B6 /* Vinci */;
+			targetProxy = DB1B2F7A1CF37B0A004FC8B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB1B2F661CF37B0A004FC8B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB1B2F671CF37B0A004FC8B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB1B2F801CF37B0A004FC8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB1B2F811CF37B0A004FC8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB1B2F831CF37B0A004FC8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vinci/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kampopat.Vinci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB1B2F841CF37B0A004FC8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vinci/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kampopat.Vinci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB1B2F861CF37B0A004FC8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VinciTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kampopat.VinciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vinci.app/Vinci";
+			};
+			name = Debug;
+		};
+		DB1B2F871CF37B0A004FC8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VinciTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kampopat.VinciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vinci.app/Vinci";
+			};
+			name = Release;
+		};
+		DB1B2F891CF37B0A004FC8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VinciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kampopat.VinciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Vinci;
+			};
+			name = Debug;
+		};
+		DB1B2F8A1CF37B0A004FC8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VinciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kampopat.VinciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Vinci;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB1B2F551CF37B0A004FC8B6 /* Build configuration list for PBXProject "Vinci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1B2F801CF37B0A004FC8B6 /* Debug */,
+				DB1B2F811CF37B0A004FC8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1B2F821CF37B0A004FC8B6 /* Build configuration list for PBXNativeTarget "Vinci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1B2F831CF37B0A004FC8B6 /* Debug */,
+				DB1B2F841CF37B0A004FC8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1B2F851CF37B0A004FC8B6 /* Build configuration list for PBXNativeTarget "VinciTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1B2F861CF37B0A004FC8B6 /* Debug */,
+				DB1B2F871CF37B0A004FC8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1B2F881CF37B0A004FC8B6 /* Build configuration list for PBXNativeTarget "VinciUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1B2F891CF37B0A004FC8B6 /* Debug */,
+				DB1B2F8A1CF37B0A004FC8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB1B2F521CF37B0A004FC8B6 /* Project object */;
+}
