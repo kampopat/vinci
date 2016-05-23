@@ -25,6 +25,8 @@
 		DB1B2FA41CF3888E004FC8B6 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FA31CF3888E004FC8B6 /* ForecastResponse.swift */; };
 		DB1B2FA91CF38A76004FC8B6 /* ForecastResponseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FA81CF38A76004FC8B6 /* ForecastResponseFactory.swift */; };
 		DB1B2FAB1CF38B31004FC8B6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FAA1CF38B31004FC8B6 /* Errors.swift */; };
+		DB1B2FAE1CF38E07004FC8B6 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FAD1CF38E07004FC8B6 /* ForecastService.swift */; };
+		DB1B2FB01CF38E1F004FC8B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FAF1CF38E1F004FC8B6 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		DB1B2FA31CF3888E004FC8B6 /* ForecastResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
 		DB1B2FA81CF38A76004FC8B6 /* ForecastResponseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponseFactory.swift; sourceTree = "<group>"; };
 		DB1B2FAA1CF38B31004FC8B6 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		DB1B2FAD1CF38E07004FC8B6 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		DB1B2FAF1CF38E1F004FC8B6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,7 @@
 			children = (
 				DB1B2FA31CF3888E004FC8B6 /* ForecastResponse.swift */,
 				DB1B2FA81CF38A76004FC8B6 /* ForecastResponseFactory.swift */,
+				DB1B2FAD1CF38E07004FC8B6 /* ForecastService.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				DB1B2FAA1CF38B31004FC8B6 /* Errors.swift */,
+				DB1B2FAF1CF38E1F004FC8B6 /* Constants.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -353,7 +359,9 @@
 				DB1B2FAB1CF38B31004FC8B6 /* Errors.swift in Sources */,
 				DB1B2F5E1CF37B0A004FC8B6 /* AppDelegate.swift in Sources */,
 				DB1B2FA41CF3888E004FC8B6 /* ForecastResponse.swift in Sources */,
+				DB1B2FAE1CF38E07004FC8B6 /* ForecastService.swift in Sources */,
 				DB1B2FA91CF38A76004FC8B6 /* ForecastResponseFactory.swift in Sources */,
+				DB1B2FB01CF38E1F004FC8B6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
