@@ -12,6 +12,7 @@ import EZSwipeController
 class ForecastSwipeController: EZSwipeController {
     
     private var _viewControllers: [UIViewController]
+    private var _pageControl = UIPageControl()
     
     // --------------------
     // MARK: Initialisation
@@ -25,6 +26,25 @@ class ForecastSwipeController: EZSwipeController {
     ////////////////////////////////////////////////////////////////////////////////
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // --------------------
+    // MARK: View Management
+    // --------------------
+    ////////////////////////////////////////////////////////////////////////////////
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configurePageControl()
+        self.view.addSubview(_pageControl)
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    private func configurePageControl() {
+        _pageControl.numberOfPages = self._viewControllers.count
+        _pageControl.currentPage = 0
+        _pageControl.alpha = 0.75
+        _pageControl.center = CGPoint(x: self.view.bounds.midX,
+                                      y: self.view.bounds.height - 30.0)
     }
     
     // --------------------
@@ -46,6 +66,7 @@ class ForecastSwipeController: EZSwipeController {
     }
 }
 
+
 // --------------------
 // MARK: EZSwipeController Data source
 // --------------------
@@ -54,5 +75,10 @@ extension ForecastSwipeController: EZSwipeControllerDataSource {
     ////////////////////////////////////////////////////////////////////////////////
     func viewControllerData() -> [UIViewController] {
         return self._viewControllers
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    func changedToPageIndex(index: Int) {
+        _pageControl.currentPage = index
     }
 }
