@@ -17,3 +17,9 @@ let kOWMUnits = "metric"
 let kOWMLocation = "Vinci,IT"
 let kOWMLanguage = "en"
 let kOWMBaseUrl = "http://api.openweathermap.org/data/2.5/forecast/daily/"
+
+
+// --------------------
+// MARK: Other
+// --------------------
+let kDegreeSymbol = "\u{00B0}"
