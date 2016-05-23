@@ -31,6 +31,7 @@
 		DB1B2FB51CF39BAA004FC8B6 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FB41CF39BAA004FC8B6 /* ForecastViewController.swift */; };
 		DB1B2FB81CF39E13004FC8B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FB71CF39E13004FC8B6 /* BaseViewController.swift */; };
 		DB1B2FBA1CF39F4F004FC8B6 /* ForecastSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FB91CF39F4F004FC8B6 /* ForecastSwipeController.swift */; };
+		DB1B2FBC1CF3A2A9004FC8B6 /* ForecastContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FBB1CF3A2A9004FC8B6 /* ForecastContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		DB1B2FB41CF39BAA004FC8B6 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		DB1B2FB71CF39E13004FC8B6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DB1B2FB91CF39F4F004FC8B6 /* ForecastSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastSwipeController.swift; sourceTree = "<group>"; };
+		DB1B2FBB1CF3A2A9004FC8B6 /* ForecastContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 				DB1B2FB41CF39BAA004FC8B6 /* ForecastViewController.swift */,
 				DB1B2FB71CF39E13004FC8B6 /* BaseViewController.swift */,
 				DB1B2FB91CF39F4F004FC8B6 /* ForecastSwipeController.swift */,
+				DB1B2FBB1CF3A2A9004FC8B6 /* ForecastContainer.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				DB1B2FA41CF3888E004FC8B6 /* ForecastResponse.swift in Sources */,
 				DB1B2FB21CF39784004FC8B6 /* ForecastViewModel.swift in Sources */,
 				DB1B2FAE1CF38E07004FC8B6 /* ForecastService.swift in Sources */,
+				DB1B2FBC1CF3A2A9004FC8B6 /* ForecastContainer.swift in Sources */,
 				DB1B2FB81CF39E13004FC8B6 /* BaseViewController.swift in Sources */,
 				DB1B2FB51CF39BAA004FC8B6 /* ForecastViewController.swift in Sources */,
 				DB1B2FA91CF38A76004FC8B6 /* ForecastResponseFactory.swift in Sources */,

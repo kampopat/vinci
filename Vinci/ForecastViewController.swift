@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Chameleon
 
 class ForecastViewController: BaseViewController {
     
@@ -38,7 +39,7 @@ class ForecastViewController: BaseViewController {
     ////////////////////////////////////////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = RandomFlatColorWithShade(.Dark)
         _descriptionLabel.text = _viewModel.weatherDescription
         _descriptionLabel.textColor = UIColor.whiteColor()
         _descriptionLabel.sizeToFit()

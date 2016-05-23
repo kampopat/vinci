@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ////////////////////////////////////////////////////////////////////////////////
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
         //Logging
         log.setup(.Debug,
                   showThreadName: true,
@@ -27,12 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                   showFileNames: true,
                   showLineNumbers: true,
                   writeToFile: nil)
-        
-        ForecastService(url: kOWMBaseUrl)
-            .forecastProducer()
-            .startWithNext { forecasts in
-                log.debug("Got forecasts: \(forecasts)")
-        }
         
         //Root View Controller
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
@@ -44,22 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     ////////////////////////////////////////////////////////////////////////////////
     private func rootViewController() -> UIViewController {
-        
-        let fakeForecast = ForecastResponse(
-            weatherDescription: "Fake",
-            temp: 20.0,
-            tempMax: 25.0,
-            tempMin: 15.0)
-        
-        let fakeVM = ForecastViewModel(forecast: fakeForecast)
-        
-        let fc1 = ForecastViewController(viewModel: fakeVM)
-        let fc2 = ForecastViewController(viewModel: fakeVM)
-        let fc3 = ForecastViewController(viewModel: fakeVM)
-        
-        let viewControllers = [fc1, fc2, fc3]
-        
-        return ForecastSwipeController(viewControllers: viewControllers)
+        return ForecastContainer()
     }
     
     ////////////////////////////////////////////////////////////////////////////////
