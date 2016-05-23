@@ -13,6 +13,11 @@ class ForecastContainer: BaseViewController {
     
     private var _swipeVC: ForecastSwipeController!
     private var _service: ForecastServiceProtocol!
+    
+    // --------------------
+    // MARK: UI Elements
+    // --------------------
+    private var _titleLabel = UILabel()
 
     // --------------------
     // MARK: Initialisation
@@ -35,14 +40,28 @@ class ForecastContainer: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTitleLabel()
+        self.view.addSubview(_titleLabel)
+        
         self._service.forecastProducer()
             .flatMap(.Concat, transform: self.viewControllersProducer)
             .startWithNext { viewControllers in
                 self._swipeVC = ForecastSwipeController(
                     viewControllers: viewControllers)
                 self.addChildViewController(self._swipeVC)
-                self.view.addSubview(self._swipeVC.view)
+                self.view.insertSubview(self._swipeVC.view,
+                    belowSubview: self._titleLabel)
         }
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    private func configureTitleLabel() {
+        _titleLabel.text = "Vinci".uppercaseString
+        _titleLabel.textColor = UIColor.whiteColor()
+        _titleLabel.font = UIFont(name: kDefaultFontBold, size: 20.0)
+        _titleLabel.sizeToFit()
+        _titleLabel.center = CGPoint(x: self.view.bounds.midX,
+                                     y: 35.0)
     }
 
     

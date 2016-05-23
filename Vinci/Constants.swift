@@ -25,3 +25,9 @@ let kOWMBaseUrl = "http://api.openweathermap.org/data/2.5/forecast/daily/"
 // --------------------
 let kDegreeSymbol = "\u{00B0}"
 let kDefaultBackgroundColour = UIColor.flatNavyBlueColorDark().darkenByPercentage(0.075)
+let kDefaultFontUltraLight = "AvenirNext-UltraLight"
+let kDefaultFontLight = "AvenirNext-Light"
+let kDefaultFontRegular = "AvenirNext-Regular"
+let kDefaultFontMedium = "AvenirNext-Medium"
+let kDefaultFontDemiBold = "AvenirNext-DemiBold"
+let kDefaultFontBold = "AvenirNext-Bold"

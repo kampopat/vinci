@@ -16,8 +16,6 @@ protocol ForecastViewModelProtocol {
     var date: String { get }
     var weatherDescription: String { get }
     var temp: String { get }
-    var tempMax: String { get }
-    var tempMin: String { get }
 }
 
 // --------------------
@@ -27,15 +25,11 @@ struct ForecastViewModel: ForecastViewModelProtocol {
     var date: String
     var weatherDescription: String
     var temp: String
-    var tempMax: String
-    var tempMin: String
     
     /// Create a new view model object using a forecast response
     init(forecast: ForecastResponseProtocol) {
         self.weatherDescription = forecast.weatherDescription
-        self.temp = String(forecast.temp) + kDegreeSymbol
-        self.tempMax = String(forecast.tempMax) + kDegreeSymbol
-        self.tempMin = String(forecast.tempMin) + kDegreeSymbol
+        self.temp = String(format: "%.0f", forecast.temp) + kDegreeSymbol
         
         let newdateFormatter = NSDateFormatter()
         newdateFormatter.locale = NSLocale.currentLocale()
