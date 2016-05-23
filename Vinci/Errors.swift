@@ -43,3 +43,13 @@ let kOWMResponseNilMessage = "Response value is nil"
 let kOWMResponseNilError = NSError(domain: kServiceErrorDomain,
                                    code: kOWMResponseNilCode,
                                    userInfo: [NSLocalizedDescriptionKey: kOWMResponseNilMessage])
+
+/// Request timed out
+let kOWMRequestTimeoutCode = 0004
+let kOWMRequestTimeoutMessage = "Service reached timeout limit"
+
+
+/// NSError thrown when an error is returned in the response object
+let kOWMRequestTimeoutError = NSError(domain: kServiceErrorDomain,
+                                      code: kOWMRequestTimeoutCode,
+                                      userInfo: [NSLocalizedDescriptionKey: kOWMRequestTimeoutMessage])

@@ -28,6 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                   showLineNumbers: true,
                   writeToFile: nil)
         
+        ForecastService(url: kOWMBaseUrl)
+            .forecastProducer()
+            .startWithNext { forecasts in
+                log.debug("Got forecasts: \(forecasts)")
+        }
+        
+        
         
         return true
     }

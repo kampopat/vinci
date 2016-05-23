@@ -56,8 +56,9 @@ struct ForecastService: ForecastServiceProtocol {
             .promoteErrors(NSError)
             .flatMap(.Latest, transform: self.apiRequestProducer)
             .flatMap(.Latest, transform: self.apiResponseProducer)
-        
-        //TODO: Timeout?
+            .timeoutWithError(kOWMRequestTimeoutError,
+                              afterInterval: NSTimeInterval(10.0),
+                              onScheduler: QueueScheduler.mainQueueScheduler)
     }
     
     ////////////////////////////////////////////////////////////////////////////////
