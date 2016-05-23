@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ForecastViewController: UIViewController {
+class ForecastViewController: BaseViewController {
     
     private var _viewModel: ForecastViewModelProtocol
     
@@ -38,7 +38,6 @@ class ForecastViewController: UIViewController {
     ////////////////////////////////////////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = kDefaultBackgroundColour
         
         _descriptionLabel.text = _viewModel.weatherDescription
         _descriptionLabel.textColor = UIColor.whiteColor()
