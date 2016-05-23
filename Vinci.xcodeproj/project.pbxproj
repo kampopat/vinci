@@ -22,6 +22,9 @@
 		DB1B2F9C1CF38631004FC8B6 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1B2F921CF38631004FC8B6 /* Rex.framework */; };
 		DB1B2F9D1CF38631004FC8B6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1B2F931CF38631004FC8B6 /* SwiftyJSON.framework */; };
 		DB1B2F9E1CF38631004FC8B6 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1B2F941CF38631004FC8B6 /* XCGLogger.framework */; };
+		DB1B2FA41CF3888E004FC8B6 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FA31CF3888E004FC8B6 /* ForecastResponse.swift */; };
+		DB1B2FA91CF38A76004FC8B6 /* ForecastResponseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FA81CF38A76004FC8B6 /* ForecastResponseFactory.swift */; };
+		DB1B2FAB1CF38B31004FC8B6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B2FAA1CF38B31004FC8B6 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		DB1B2F921CF38631004FC8B6 /* Rex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rex.framework; path = Carthage/Build/iOS/Rex.framework; sourceTree = "<group>"; };
 		DB1B2F931CF38631004FC8B6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		DB1B2F941CF38631004FC8B6 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		DB1B2FA31CF3888E004FC8B6 /* ForecastResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		DB1B2FA81CF38A76004FC8B6 /* ForecastResponseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponseFactory.swift; sourceTree = "<group>"; };
+		DB1B2FAA1CF38B31004FC8B6 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +130,12 @@
 		DB1B2F5C1CF37B0A004FC8B6 /* Vinci */ = {
 			isa = PBXGroup;
 			children = (
+				DB1B2F691CF37B0A004FC8B6 /* Info.plist */,
 				DB1B2F5D1CF37B0A004FC8B6 /* AppDelegate.swift */,
 				DB1B2F641CF37B0A004FC8B6 /* Assets.xcassets */,
 				DB1B2F661CF37B0A004FC8B6 /* LaunchScreen.storyboard */,
-				DB1B2F691CF37B0A004FC8B6 /* Info.plist */,
+				DB1B2FA71CF389DD004FC8B6 /* Service */,
+				DB1B2FAC1CF38B5D004FC8B6 /* Utils */,
 			);
 			path = Vinci;
 			sourceTree = "<group>";
@@ -165,6 +173,23 @@
 				DB1B2F941CF38631004FC8B6 /* XCGLogger.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB1B2FA71CF389DD004FC8B6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B2FA31CF3888E004FC8B6 /* ForecastResponse.swift */,
+				DB1B2FA81CF38A76004FC8B6 /* ForecastResponseFactory.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		DB1B2FAC1CF38B5D004FC8B6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DB1B2FAA1CF38B31004FC8B6 /* Errors.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +350,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1B2FAB1CF38B31004FC8B6 /* Errors.swift in Sources */,
 				DB1B2F5E1CF37B0A004FC8B6 /* AppDelegate.swift in Sources */,
+				DB1B2FA41CF3888E004FC8B6 /* ForecastResponse.swift in Sources */,
+				DB1B2FA91CF38A76004FC8B6 /* ForecastResponseFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
