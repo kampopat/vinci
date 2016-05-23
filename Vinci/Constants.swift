@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Chameleon
 
 // --------------------
 // MARK: OWM Settings
@@ -23,3 +24,4 @@ let kOWMBaseUrl = "http://api.openweathermap.org/data/2.5/forecast/daily/"
 // MARK: Other
 // --------------------
 let kDegreeSymbol = "\u{00B0}"
+let kDefaultBackgroundColour = UIColor.flatNavyBlueColorDark().darkenByPercentage(0.075)
