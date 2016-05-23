@@ -13,6 +13,7 @@ import Foundation
 // --------------------
 protocol ForecastViewModelProtocol {
     // Similar to a forecast response but types are what the view will need
+    var date: String { get }
     var weatherDescription: String { get }
     var temp: String { get }
     var tempMax: String { get }
@@ -23,7 +24,7 @@ protocol ForecastViewModelProtocol {
 // MARK: View Model
 // --------------------
 struct ForecastViewModel: ForecastViewModelProtocol {
-    
+    var date: String
     var weatherDescription: String
     var temp: String
     var tempMax: String
@@ -35,5 +36,11 @@ struct ForecastViewModel: ForecastViewModelProtocol {
         self.temp = String(forecast.temp) + kDegreeSymbol
         self.tempMax = String(forecast.tempMax) + kDegreeSymbol
         self.tempMin = String(forecast.tempMin) + kDegreeSymbol
+        
+        let newdateFormatter = NSDateFormatter()
+        newdateFormatter.locale = NSLocale.currentLocale()
+        newdateFormatter.dateFormat = "EEE dd MMM"
+        self.date = newdateFormatter.stringFromDate(
+            NSDate(timeIntervalSince1970: NSTimeInterval(forecast.timeInterval)))
     }
 }
