@@ -43,12 +43,14 @@ struct ForecastResponseFactory: ForecastResponseFactoryProtocol {
     ////////////////////////////////////////////////////////////////////////////////
     static private func forecastResponse(forecastJSON: JSON) -> ForecastResponseProtocol {
         
+        let timeInterval = forecastJSON["dt"].intValue
         let description = forecastJSON["weather"][0]["description"].stringValue
         let temp = forecastJSON["temp"]["day"].doubleValue
         let tempMax = forecastJSON["temp"]["max"].doubleValue
         let tempMin = forecastJSON["temp"]["min"].doubleValue
         
         let response = ForecastResponse(
+            timeInterval: timeInterval,
             weatherDescription: description,
             temp: temp,
             tempMax: tempMax,

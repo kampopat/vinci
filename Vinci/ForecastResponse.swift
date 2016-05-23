@@ -14,6 +14,7 @@ import Foundation
 
 /// The weather properties we care about receiving from OWM
 protocol ForecastResponseProtocol {
+    var timeInterval: Int { get }
     var weatherDescription: String { get }
     var temp: Double { get }
     var tempMax: Double { get }
@@ -26,6 +27,7 @@ protocol ForecastResponseProtocol {
 // --------------------
 
 struct ForecastResponse: ForecastResponseProtocol {
+    var timeInterval: Int
     var weatherDescription: String
     var temp: Double
     var tempMax: Double
