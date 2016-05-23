@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABC17FBB1CAA4E9000141D78 /* EZSwipeController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC17FBA1CAA4E9000141D78 /* EZSwipeController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABC17FBD1CAA4E9800141D78 /* EZSwipeController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC17FBC1CAA4E9800141D78 /* EZSwipeController.h */; };
+		ABC17FC11CAAE7EF00141D78 /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A9D3D1BF7BB7200E52843 /* EZSwipeController.swift */; };
+		E11440AF1BF691CC000DDE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11440AE1BF691CC000DDE45 /* AppDelegate.swift */; };
+		E11440B11BF691CC000DDE45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11440B01BF691CC000DDE45 /* ViewController.swift */; };
+		E11440B61BF691CC000DDE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11440B51BF691CC000DDE45 /* Assets.xcassets */; };
+		E11440B91BF691CC000DDE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11440B71BF691CC000DDE45 /* LaunchScreen.storyboard */; };
+		E11440C41BF691CC000DDE45 /* EZSwipeControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11440C31BF691CC000DDE45 /* EZSwipeControllerUITests.swift */; };
+		E17A9D3E1BF7BB7200E52843 /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A9D3D1BF7BB7200E52843 /* EZSwipeController.swift */; };
+		E19373971BF69D73003F1D99 /* MySwipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19373961BF69D73003F1D99 /* MySwipeVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E11440C01BF691CC000DDE45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E11440A31BF691CC000DDE45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E11440AA1BF691CC000DDE45;
+			remoteInfo = EZSwipeController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABC17FA41CAA448E00141D78 /* EZSwipeController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EZSwipeController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC17FA81CAA448E00141D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC17FBA1CAA4E9000141D78 /* EZSwipeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZSwipeController.h; path = "Carthage Framework/EZSwipeController.h"; sourceTree = SOURCE_ROOT; };
+		ABC17FBC1CAA4E9800141D78 /* EZSwipeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZSwipeController.h; sourceTree = "<group>"; };
+		E11440AB1BF691CC000DDE45 /* EZSwipeControllerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZSwipeControllerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11440AE1BF691CC000DDE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E11440B01BF691CC000DDE45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E11440B51BF691CC000DDE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11440B81BF691CC000DDE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E11440BA1BF691CC000DDE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11440BF1BF691CC000DDE45 /* EZSwipeControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZSwipeControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11440C31BF691CC000DDE45 /* EZSwipeControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZSwipeControllerUITests.swift; sourceTree = "<group>"; };
+		E11440C51BF691CC000DDE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E17A9D3D1BF7BB7200E52843 /* EZSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwipeController.swift; sourceTree = SOURCE_ROOT; };
+		E19373961BF69D73003F1D99 /* MySwipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySwipeVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABC17FA01CAA448E00141D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11440A81BF691CC000DDE45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11440BC1BF691CC000DDE45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABC17FA51CAA448E00141D78 /* Carthage Framework */ = {
+			isa = PBXGroup;
+			children = (
+				ABC17FBC1CAA4E9800141D78 /* EZSwipeController.h */,
+				ABC17FA81CAA448E00141D78 /* Info.plist */,
+			);
+			path = "Carthage Framework";
+			sourceTree = "<group>";
+		};
+		E11440A21BF691CC000DDE45 = {
+			isa = PBXGroup;
+			children = (
+				E11440AD1BF691CC000DDE45 /* EZSwipeController */,
+				E11440C21BF691CC000DDE45 /* EZSwipeControllerUITests */,
+				ABC17FA51CAA448E00141D78 /* Carthage Framework */,
+				E11440AC1BF691CC000DDE45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E11440AC1BF691CC000DDE45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11440AB1BF691CC000DDE45 /* EZSwipeControllerSample.app */,
+				E11440BF1BF691CC000DDE45 /* EZSwipeControllerUITests.xctest */,
+				ABC17FA41CAA448E00141D78 /* EZSwipeController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E11440AD1BF691CC000DDE45 /* EZSwipeController */ = {
+			isa = PBXGroup;
+			children = (
+				E11440AE1BF691CC000DDE45 /* AppDelegate.swift */,
+				E19373961BF69D73003F1D99 /* MySwipeVC.swift */,
+				E17A9D3D1BF7BB7200E52843 /* EZSwipeController.swift */,
+				E11440B01BF691CC000DDE45 /* ViewController.swift */,
+				E11440B51BF691CC000DDE45 /* Assets.xcassets */,
+				E11440B71BF691CC000DDE45 /* LaunchScreen.storyboard */,
+				E11440BA1BF691CC000DDE45 /* Info.plist */,
+			);
+			path = EZSwipeController;
+			sourceTree = "<group>";
+		};
+		E11440C21BF691CC000DDE45 /* EZSwipeControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC17FBA1CAA4E9000141D78 /* EZSwipeController.h */,
+				E11440C31BF691CC000DDE45 /* EZSwipeControllerUITests.swift */,
+				E11440C51BF691CC000DDE45 /* Info.plist */,
+			);
+			path = EZSwipeControllerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ABC17FA11CAA448E00141D78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC17FBD1CAA4E9800141D78 /* EZSwipeController.h in Headers */,
+				ABC17FBB1CAA4E9000141D78 /* EZSwipeController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ABC17FA31CAA448E00141D78 /* EZSwipeController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC17FAF1CAA448E00141D78 /* Build configuration list for PBXNativeTarget "EZSwipeController" */;
+			buildPhases = (
+				ABC17F9F1CAA448E00141D78 /* Sources */,
+				ABC17FA01CAA448E00141D78 /* Frameworks */,
+				ABC17FA11CAA448E00141D78 /* Headers */,
+				ABC17FA21CAA448E00141D78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EZSwipeController;
+			productName = "Carthage Framework";
+			productReference = ABC17FA41CAA448E00141D78 /* EZSwipeController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E11440AA1BF691CC000DDE45 /* EZSwipeControllerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11440C81BF691CC000DDE45 /* Build configuration list for PBXNativeTarget "EZSwipeControllerSample" */;
+			buildPhases = (
+				E11440A71BF691CC000DDE45 /* Sources */,
+				E11440A81BF691CC000DDE45 /* Frameworks */,
+				E11440A91BF691CC000DDE45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EZSwipeControllerSample;
+			productName = EZSwipeController;
+			productReference = E11440AB1BF691CC000DDE45 /* EZSwipeControllerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E11440BE1BF691CC000DDE45 /* EZSwipeControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11440CB1BF691CC000DDE45 /* Build configuration list for PBXNativeTarget "EZSwipeControllerUITests" */;
+			buildPhases = (
+				E11440BB1BF691CC000DDE45 /* Sources */,
+				E11440BC1BF691CC000DDE45 /* Frameworks */,
+				E11440BD1BF691CC000DDE45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E11440C11BF691CC000DDE45 /* PBXTargetDependency */,
+			);
+			name = EZSwipeControllerUITests;
+			productName = EZSwipeControllerUITests;
+			productReference = E11440BF1BF691CC000DDE45 /* EZSwipeControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11440A31BF691CC000DDE45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Goktug Yilmaz";
+				TargetAttributes = {
+					ABC17FA31CAA448E00141D78 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					E11440AA1BF691CC000DDE45 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E11440BE1BF691CC000DDE45 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E11440AA1BF691CC000DDE45;
+					};
+				};
+			};
+			buildConfigurationList = E11440A61BF691CC000DDE45 /* Build configuration list for PBXProject "EZSwipeController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E11440A21BF691CC000DDE45;
+			productRefGroup = E11440AC1BF691CC000DDE45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11440AA1BF691CC000DDE45 /* EZSwipeControllerSample */,
+				E11440BE1BF691CC000DDE45 /* EZSwipeControllerUITests */,
+				ABC17FA31CAA448E00141D78 /* EZSwipeController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABC17FA21CAA448E00141D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11440A91BF691CC000DDE45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11440B91BF691CC000DDE45 /* LaunchScreen.storyboard in Resources */,
+				E11440B61BF691CC000DDE45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11440BD1BF691CC000DDE45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABC17F9F1CAA448E00141D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC17FC11CAAE7EF00141D78 /* EZSwipeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11440A71BF691CC000DDE45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11440B11BF691CC000DDE45 /* ViewController.swift in Sources */,
+				E17A9D3E1BF7BB7200E52843 /* EZSwipeController.swift in Sources */,
+				E19373971BF69D73003F1D99 /* MySwipeVC.swift in Sources */,
+				E11440AF1BF691CC000DDE45 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11440BB1BF691CC000DDE45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11440C41BF691CC000DDE45 /* EZSwipeControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E11440C11BF691CC000DDE45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E11440AA1BF691CC000DDE45 /* EZSwipeControllerSample */;
+			targetProxy = E11440C01BF691CC000DDE45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E11440B71BF691CC000DDE45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11440B81BF691CC000DDE45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABC17FAD1CAA448E00141D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				INFOPLIST_FILE = "Carthage Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbf.EZSwipeController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABC17FAE1CAA448E00141D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				INFOPLIST_FILE = "Carthage Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbf.EZSwipeController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E11440C61BF691CC000DDE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E11440C71BF691CC000DDE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11440C91BF691CC000DDE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EZSwipeController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbf.EZSwipeController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E11440CA1BF691CC000DDE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EZSwipeController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbf.EZSwipeController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E11440CC1BF691CC000DDE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EZSwipeControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbf.EZSwipeControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EZSwipeController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E11440CD1BF691CC000DDE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EZSwipeControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbf.EZSwipeControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EZSwipeController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABC17FAF1CAA448E00141D78 /* Build configuration list for PBXNativeTarget "EZSwipeController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC17FAD1CAA448E00141D78 /* Debug */,
+				ABC17FAE1CAA448E00141D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11440A61BF691CC000DDE45 /* Build configuration list for PBXProject "EZSwipeController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11440C61BF691CC000DDE45 /* Debug */,
+				E11440C71BF691CC000DDE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11440C81BF691CC000DDE45 /* Build configuration list for PBXNativeTarget "EZSwipeControllerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11440C91BF691CC000DDE45 /* Debug */,
+				E11440CA1BF691CC000DDE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11440CB1BF691CC000DDE45 /* Build configuration list for PBXNativeTarget "EZSwipeControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11440CC1BF691CC000DDE45 /* Debug */,
+				E11440CD1BF691CC000DDE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E11440A31BF691CC000DDE45 /* Project object */;
+}

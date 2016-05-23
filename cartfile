@@ -1,0 +1,9 @@
+github "DaveWoodCom/XCGLogger"
+github "ViccAlexander/Chameleon"
+github "ReactiveCocoa/ReactiveCocoa"
+github "Alamofire/Alamofire" ~> 3.4
+github "SwiftyJSON/SwiftyJSON"
+github "ashleymills/Reachability.swift"
+github "goktugyil/EZSwipeController"
+github "neilpa/Rex"
+github "dennisweissmann/DeviceKit" ~> 0.3.2
