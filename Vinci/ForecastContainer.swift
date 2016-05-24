@@ -18,6 +18,8 @@ class ForecastContainer: BaseViewController {
     // MARK: UI Elements
     // --------------------
     private var _titleLabel = UILabel()
+    private var _retryLabel = UILabel()
+    private var _retryGesture = UITapGestureRecognizer()
 
     // --------------------
     // MARK: Initialisation
@@ -41,17 +43,13 @@ class ForecastContainer: BaseViewController {
         super.viewDidLoad()
         
         configureTitleLabel()
-        self.view.addSubview(_titleLabel)
+        configureRetryLabel()
         
-        self._service.forecastProducer()
-            .flatMap(.Concat, transform: self.viewControllersProducer)
-            .startWithNext { viewControllers in
-                self._swipeVC = ForecastSwipeController(
-                    viewControllers: viewControllers)
-                self.addChildViewController(self._swipeVC)
-                self.view.insertSubview(self._swipeVC.view,
-                    belowSubview: self._titleLabel)
-        }
+        self.view.addSubview(_titleLabel)
+        self.view.addSubview(_retryLabel)
+        
+        configureGestureForRetries()
+        getViewControllersForSwipeController()
     }
     
     ////////////////////////////////////////////////////////////////////////////////
@@ -63,7 +61,75 @@ class ForecastContainer: BaseViewController {
         _titleLabel.center = CGPoint(x: self.view.bounds.midX,
                                      y: 35.0)
     }
-
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    private func configureRetryLabel() {
+        _retryLabel.text = kRetryMessage
+        _retryLabel.textColor = UIColor.whiteColor()
+        _retryLabel.font = UIFont(name: kDefaultFontRegular, size: 22.0)
+        _retryLabel.numberOfLines = 0
+        _retryLabel.textAlignment = .Center
+        let size = CGSize(width: self.view.bounds.width - 85.0,
+                          height: self.view.bounds.height)
+        
+        _retryLabel.frame.size =  _retryLabel.sizeThatFits(size)
+        _retryLabel.center = self.view.center
+        _retryLabel.alpha = 0.0
+        
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    private func configureGestureForRetries() {
+        _retryGesture.numberOfTapsRequired = 2
+        _retryGesture.numberOfTouchesRequired = 1
+        
+        _retryGesture.rac_gestureSignal()
+            .subscribeNext { [unowned self] _ in
+                self.getViewControllersForSwipeController()
+        }
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    private func getViewControllersForSwipeController() {
+        self.hideRetryMessage()
+        self.view.removeGestureRecognizer(self._retryGesture)
+        self._service.forecastProducer()
+            .flatMap(.Concat, transform: self.viewControllersProducer)
+            .start({ (event) in
+                switch event {
+                case let .Next(viewControllers):
+                    self.configureSwipeController(viewControllers)
+                case .Failed(_):
+                    self.view.addGestureRecognizer(self._retryGesture)
+                    self.displayRetryMessage()
+                default:
+                    break
+                }
+            })
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    private func configureSwipeController(viewControllers: [UIViewController]) {
+        self._swipeVC = ForecastSwipeController(
+            viewControllers: viewControllers)
+        self.addChildViewController(self._swipeVC)
+        self.view.insertSubview(self._swipeVC.view,
+                                belowSubview: self._titleLabel)
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    private func displayRetryMessage() {
+        UIView.animateWithDuration(0.5) {
+            self._retryLabel.alpha = 1.0
+        }
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    private func hideRetryMessage() {
+        UIView.animateWithDuration(0.35) {
+            self._retryLabel.alpha = 0.0
+        }
+    }
     
     ////////////////////////////////////////////////////////////////////////////////
     private func viewControllersProducer(forecasts: [ForecastResponseProtocol])

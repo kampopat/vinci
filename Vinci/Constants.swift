@@ -24,6 +24,12 @@ let kOWMBaseUrl = "http://api.openweathermap.org/data/2.5/forecast/daily/"
 // MARK: Other
 // --------------------
 let kDegreeSymbol = "\u{00B0}"
+let kRetryMessage = "Oops! That didn't work. Double tap anywhere to try again."
+
+
+// --------------------
+// MARK: UI
+// --------------------
 let kDefaultBackgroundColour = UIColor.flatNavyBlueColorDark().darkenByPercentage(0.075)
 let kDefaultFontUltraLight = "AvenirNext-UltraLight"
 let kDefaultFontLight = "AvenirNext-Light"
