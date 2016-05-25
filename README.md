@@ -1,2 +1,4 @@
 # Vinci
-Weather forecast iPhone app built in Swift
+Five day weather forecast for Vinci, Italy - iPhone app built with Swift
+
+Discussion - [here](Discussion.md)
