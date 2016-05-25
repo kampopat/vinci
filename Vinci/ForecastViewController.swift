@@ -70,9 +70,16 @@ class ForecastViewController: BaseViewController {
         _descriptionLabel.text = _viewModel.weatherDescription.uppercaseString
         _descriptionLabel.textColor = UIColor.whiteColor()
         _descriptionLabel.font = UIFont(name: kDefaultFontBold, size: 32.0)
-        _descriptionLabel.sizeToFit()
+        _descriptionLabel.numberOfLines = 0
+        _descriptionLabel.textAlignment = .Center
+        let size = CGSize(width: self.view.bounds.width - 55.0,
+                          height: self.view.bounds.height)
+        
+        _descriptionLabel.frame.size = _descriptionLabel.sizeThatFits(size)
         _descriptionLabel.center = CGPoint(x: self.view.bounds.midX,
-                                           y: self.view.bounds.midY + 45.0)
+                                           y: self.view.bounds.midY
+                                            + CGFloat(_descriptionLabel.frame.height/4)
+                                            + 45.0)
     }
     
     ////////////////////////////////////////////////////////////////////////////////
@@ -82,7 +89,9 @@ class ForecastViewController: BaseViewController {
         _dateLabel.font = UIFont(name: kDefaultFontRegular, size: 22.0)
         _dateLabel.sizeToFit()
         _dateLabel.center = CGPoint(x: self.view.bounds.midX,
-                                    y: self.view.bounds.midY + 85.0)
+                                    y: _descriptionLabel.frame.origin.y
+                                        + _descriptionLabel.frame.size.height
+                                        + 40.0)
     }
 }
 
